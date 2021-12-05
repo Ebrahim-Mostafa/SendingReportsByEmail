@@ -9,7 +9,7 @@ import java.util.zip.ZipOutputStream;
 
 public class CompressFile {
 
-    private List<String> fileList;
+    private List<String> fileList; 
     public static String SPOON_OUTPUT_ZIP_FILE = System.getProperty("user.dir")+ File.separator+"android"+File.separator+"app"+ File.separator+"build"+ File.separator+"spoon-output.zip";
     ///Users/imostafa/instore-security-app/android/app/build/spoon-output.zip
 
