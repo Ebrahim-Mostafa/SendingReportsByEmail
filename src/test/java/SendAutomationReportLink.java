@@ -41,12 +41,13 @@ public class SendAutomationReportLink {
             message.setSubject("Android Automation Execution Test Report");
 
             String messageBody = "Kindly, have a look at the latest test automation report execution attached in the following Link:";
-            String reportURL = " https://security-dashboard-spoon-report.netlify.app/";
-            String htmlText = "<font size =\"4\" face=\"arial\" >Dear all,</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\" >" + messageBody + "</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\">" + reportURL + "</font>"+"</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\" >Thanks & Regards,</font>";
+            String reportURL_1 = "https://security-dashboard-spoon-report.netlify.app/";
+            String reportURL_2 = "https://scan-and-go-android-automation-report.netlify.app/";
+            String htmlText = "<font size =\"4\" face=\"arial\" >Dear all,</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\" >" + messageBody + "</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\">" + reportURL_1 + "</font>"+"</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\" >Thanks & Regards,</font>";
             message.setContent(htmlText, "text/html");
             Transport.send(message);
 
-            System.out.println("===== Email Sent Successfully with Android Automation Report !! =====");
+            System.out.println("===== Email Sent Successfully with Android Automation Test Report !! =====");
 
         } catch (MessagingException e) {
 
