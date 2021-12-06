@@ -46,7 +46,7 @@ public class SendAutomationReportLink {
             message.setContent(htmlText, "text/html");
             Transport.send(message);
 
-            System.out.println("=====Email Sent Successfully with Android Automation!!=====");
+            System.out.println("===== Email Sent Successfully with Android Automation Report !! =====");
 
         } catch (MessagingException e) {
 

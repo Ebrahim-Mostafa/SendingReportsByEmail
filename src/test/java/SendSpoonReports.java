@@ -80,7 +80,7 @@ public class SendSpoonReports {
             // finally send the email
             Transport.send(message);
 
-            System.out.println("=====Email Sent Successfully with Spoon Report!!=====");
+            System.out.println("===== Email Sent Successfully with Spoon Report!! =====");
 
         } catch (MessagingException e) {
 
