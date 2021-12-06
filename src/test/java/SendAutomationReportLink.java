@@ -41,7 +41,8 @@ public class SendAutomationReportLink {
             message.setSubject("Android Automation Execution Test Report");
 
             String messageBody = "Kindly, have a look at the latest test automation report execution attached in the following Link:";
-            String htmlText = "<font size =\"4\" face=\"arial\" >Dear all,</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\" >" + messageBody + "</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\"> https://security-dashboard-spoon-report.netlify.app/ </font>"+"</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\" >Best Regards,</font>";
+            String reportURL = " https://security-dashboard-spoon-report.netlify.app/";
+            String htmlText = "<font size =\"4\" face=\"arial\" >Dear all,</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\" >" + messageBody + "</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\">" + reportURL + "</font>"+"</font>" + "<br><br>" + "<font size =\"4\" face=\"arial\" >Thanks & Regards,</font>";
             message.setContent(htmlText, "text/html");
             Transport.send(message);
 
