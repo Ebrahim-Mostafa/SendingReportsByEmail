@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NMS Sunny Day steps" parallel="tests" thread-count="2">
+
+    <listeners>
+<!--        <listener class-name="Listeners.TestScreenCaptureListener"/>-->
+        <!-- <listener class-name="Listeners.QmetryExecutionListener"/>-->
+    </listeners>
+
+    <test name="Test On Chrome">
+        <parameter name="Browser" value="Chrome"/>
+        <parameter name="ENV" value="TEST"/>
+        <parameter name="URL" value="https://www.netlify.com/"/>
+
+        <classes>
+<!--            <class name="tests.pharmacyTests.loginTest"/>-->
+<!--            <class name="tests.pharmacyTests.DashBoardTest"/>-->
+<!--            <class name="tests.pharmacyTests.patientRecordsTest"/>-->
+<!--            <class name="tests.pharmacyTests.PatientEHRTest"/>-->
+<!--            <class name="tests.pharmacyTests.NHSFluVaccinationServiceTest"/>-->
+        </classes>
+    </test> <!-- configuration annotation Test -->
+</suite> <!-- Suite -->
